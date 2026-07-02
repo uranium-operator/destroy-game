@@ -1,3 +1,6 @@
-Statue Of Liberty : 100
-New York : 15000
-School : 47
+Type help if you don't know how to play
+Statue Of Liberty : 1000HP
+New York : 15000HP
+School : 48HP
+Houses : 5000HP
+Sentinel Island : 79999HP
