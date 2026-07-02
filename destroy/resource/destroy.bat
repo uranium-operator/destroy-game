@@ -9,19 +9,26 @@ set build3HP=48
 if %build1HP% LEQ 0 (
  set "build1=(destroyed)"
  set build1HP=0
-) else if %build2HP% LEQ 0 (
+)
+if %build2HP% LEQ 0 (
  set "build2=(destroyed)"
  set build2HP=0
-) else if %build3HP% LEQ 0 (
+)
+if %build3HP% LEQ 0 (
  set "build3=(destroyed)"
  set build3HP=0
 )
 cls
-echo destroy?
-echo %build1% : %build1HP%HP
-echo %build2% : %build2HP%HP
-echo %build3% : %build3HP%HP
-set /p "type=>>> "
+(
+echo %build1% : %build1HP%
+echo %build2% : %build2HP%
+echo %build3% : %build3HP%
+) > data.txt
+powershell -Command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show((Get-Content data.txt -Raw), 'Pesan')"
+::input
+set "type="
+for /F "delims=" %%i in ('powershell -Command "& {Add-Type -AssemblyName Microsoft.VisualBasic; [Microsoft.VisualBasic.Interaction]::InputBox('Destroy:', 'Destroy')}"') do set type=%%i
+::logic
 if "%type%" EQU "%build1%" (
  set /a build1HP=%build1HP%-1
  goto destroy
