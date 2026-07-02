@@ -1,4 +1,0 @@
-Type the object you want to destroy into the input box.
-The HP of your build will subtract by 1
-NOTE:
-The object name MUST match the existing one.
