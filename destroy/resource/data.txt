@@ -1,6 +1,10 @@
 Type help if you don't know how to play
-Statue Of Liberty : 1000HP
-New York : 15000HP
-School : 48HP
-Houses : 5000HP
-Sentinel Island : 79999HP
+Statue Of Liberty : 1000 HP
+New York : 15000 HP
+School : 48 HP
+Houses : 5000 HP
+Sentinel Island : 80000 HP
+achievement:
+Conquering New York : 0 
+Conquering Sentinel Island : 0 
+WIN : 0 

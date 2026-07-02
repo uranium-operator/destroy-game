@@ -1,0 +1,5 @@
+Type the object you want to destroy into the input box.
+The HP of your build will subtract by 1
+If one of those achievements has a value of 1, it means you have unlocked that achievement.
+NOTE:
+The object name MUST match the existing one.
